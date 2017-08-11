@@ -2,9 +2,48 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">        
+        <title>responsive-site</title>
+        <meta name="description" content="Lesson7 課題">
+        <meta name="keywords" content="レスポンシブ,Webデザイン">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="style.css">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-        <h1>タイトル</h1>
+        <header>
+            <h1>
+                <img src="./images/P7098673.jpg" alt="キッチン" class="flexible-images">
+            </h1>
+        </header>
+        <main>
+            <section id="skills">
+                <h2 class="text-center">Skills</h2>
+                <div class="container">
+                    <div class="skill-box">
+                        <i aria-hidden="true" class="skill-icon fa fa-laptop"></i>
+                        <h3 class="text-center">Developer</h3>
+                        <p>システムエンジニア・プログラマとして20年以上お仕事をしています。HTML/CSSも現在勉強中です。</p>
+                    </div>
+                    <div class="skill-box">
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                        <h3 class="text-center">Photo</h3>
+                        <p>写真をとることが好きです。物撮り勉強中です。</p>
+                   </div>
+                   <div class="skill-box">
+                        <i class="fa fa-coffee" aria-hidden="true"></i>
+                        <h3 class="text-center">Ceramist</h3>
+                        <p>陶芸もできます。日々の生活の中で手になじむ器作りを目指しています。</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2 class="text-center">Contact</h2>
+                <ul>
+                    <li><a href="mailto:noccoopenhear@*****.com"><i aria-label="メール" class="fa fa-envelope-o"></i></a></li>
+                </ul>
+            </section>
+        </main>        
+        
     </body>
 </html>

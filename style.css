@@ -1,5 +1,150 @@
-.some-section {
-  overflow: hidden;
-  *zoom: 1; }
+@charset "UTF-8";
+/*@import url(https://fonts.googleapis.com/css?family=Abel);*/
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #FDFAFE; }
+
+a {
+  color: #CC7493;
+  text-decoration: none; }
+  a:visited {
+    color: #be4f76; }
+  a:hover {
+    color: #be4f76; }
+  a:active {
+    color: #d387a1; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #skills i, #contact ul a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #skills h3 {
+  /*  font-family: 'Abel', sans-serif;*/
+  font-family: 'Raleway', sans-serif; }
+
+.uppercase, section h2, #skills h3 {
+  text-transform: uppercase; }
+
+/* header
+------------------------------------------------------------*/
+header .flexible-images {
+  width: 100%;
+  max-height: 250px;
+  display: block;
+  padding: 0;
+  margin: 0 0 15px 0; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#skills {
+  background-color: #DCD1AA; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #skills h2 {
+    color: #FDFAFE;
+    margin-bottom: 60px; }
+  #skills .skill-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    /*    padding: 20px;*/
+    background-color: #FDFAFE;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #skills i {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    background-color: #CC7493;
+    font-size: 4.5rem;
+    color: #FFF;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    @include border-radius(50%);*/ }
+  #skills h3 {
+    color: #CC7493;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+  #skills p {
+    padding: 20px; }
+
+#contact ul {
+  text-align: center;
+  margin-top: 60px; }
+  #contact ul li {
+    display: inline-block;
+    font-size: 4.5rem;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #contact ul a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    color: #FFF;
+    text-align: center;
+    background-color: #CC7493;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+
+@media (min-width: 769px) {
+  /* Base
+  ------------------------------------------------------------*/
+  a:hover {
+    text-decoration: underline; }
+
+  header .flexible-images {
+    max-height: 500px; }
+
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #skills .skill-box {
+    margin: 0 10px; }
+
+  #contact ul a:hover {
+    background-color: #be4f76; } }
 
 /*# sourceMappingURL=style.css.map */
